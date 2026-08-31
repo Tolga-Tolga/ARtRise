@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a767a828f16fa174a88f22c3f6a31aaa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Editor/EditorWindow/OpenCVForUnityProjectSizeReducerWindow.cs
+  uploadId: 817356

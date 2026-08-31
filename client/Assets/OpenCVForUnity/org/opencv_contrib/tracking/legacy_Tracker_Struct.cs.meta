@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 832e57c808cb8da46a29d233e7b94395
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv_contrib/tracking/legacy_Tracker_Struct.cs
+  uploadId: 817356

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4c21b039bd8bde54b9f761c5fd15d24f
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/ReadMe.pdf
+  uploadId: 817356

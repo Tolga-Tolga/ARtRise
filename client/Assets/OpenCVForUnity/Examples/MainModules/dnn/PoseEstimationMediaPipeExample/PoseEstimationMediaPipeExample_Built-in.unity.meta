@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c6de8de1a5efe9746883c1a08fecce7b
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/PoseEstimationMediaPipeExample/PoseEstimationMediaPipeExample_Built-in.unity
+  uploadId: 817356

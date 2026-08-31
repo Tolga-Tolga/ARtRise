@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3d0e2eb1b6ef03f438da8d528269341f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/video/Tracker_Struct.cs
+  uploadId: 817356

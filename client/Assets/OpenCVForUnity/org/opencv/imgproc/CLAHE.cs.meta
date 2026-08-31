@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2efc0f48f73e7c84b9357b4470e6c003
+timeCreated: 1532336879
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/imgproc/CLAHE.cs
+  uploadId: 817356

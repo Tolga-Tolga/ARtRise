@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e14ac1cb031b2f14e88975167eb4598a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/_unity/Helper/Source2MatHelper/WebCamTexture2MatAsyncGPUHelper.cs
+  uploadId: 817356

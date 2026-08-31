@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 010fd84b4610c4d4f853dd54549c9343
+timeCreated: 1532336876
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/core/TickMeter.cs
+  uploadId: 817356

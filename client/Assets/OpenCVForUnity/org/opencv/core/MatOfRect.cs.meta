@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2ab1c8939e82ca54c9109151ecb9eb22
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/core/MatOfRect.cs
+  uploadId: 817356

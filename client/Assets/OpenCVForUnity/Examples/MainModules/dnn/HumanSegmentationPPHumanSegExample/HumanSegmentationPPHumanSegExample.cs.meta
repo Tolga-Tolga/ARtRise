@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1e2f34aad6e986643ac492b83c80adca
+timeCreated: 1501509920
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/HumanSegmentationPPHumanSegExample/HumanSegmentationPPHumanSegExample.cs
+  uploadId: 817356

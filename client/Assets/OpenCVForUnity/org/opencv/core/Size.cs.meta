@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 10c28bde0d9597c4e87908b0079f0867
+timeCreated: 1436179635
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/core/Size.cs
+  uploadId: 817356

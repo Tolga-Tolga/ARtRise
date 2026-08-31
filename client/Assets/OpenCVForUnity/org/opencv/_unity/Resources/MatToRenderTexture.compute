@@ -1,0 +1,60 @@
+#pragma kernel MatToRenderTexture_sRGB
+#pragma kernel MatToRenderTexture_Linear
+
+StructuredBuffer<uint> Source;
+RWTexture2D<unorm float4> Destination;
+bool HFlip;
+bool VFlip;
+
+float4 sRGBToLinear(float4 c)
+{
+    return float4(
+        c.r <= 0.04045f ? c.r / 12.92f : pow((c.r + 0.055f) / 1.055f, 2.4f),
+        c.g <= 0.04045f ? c.g / 12.92f : pow((c.g + 0.055f) / 1.055f, 2.4f),
+        c.b <= 0.04045f ? c.b / 12.92f : pow((c.b + 0.055f) / 1.055f, 2.4f),
+        c.a
+    );
+}
+
+static const float INV_255 = 1.0 / 255.0;
+float4 UnpackRGBA(uint v)
+{
+    return float4(
+        (float) (v & 0xff) * INV_255,
+        (float) ((v >> 8) & 0xff) * INV_255,
+        (float) ((v >> 16) & 0xff) * INV_255,
+        (float) ((v >> 24) & 0xff) * INV_255
+    );
+}
+
+[numthreads(8, 8, 1)]
+void MatToRenderTexture_sRGB(uint3 id : SV_DispatchThreadID)
+{
+    uint w, h;
+    Destination.GetDimensions(w, h);
+
+    uint x = HFlip ? w - id.x - 1 : id.x;
+    uint y = VFlip ? h - id.y - 1 : id.y;
+
+    uint v = Source[x + y * w];
+
+    Destination[id.xy] = UnpackRGBA(v);
+}
+
+[numthreads(8, 8, 1)]
+void MatToRenderTexture_Linear(uint3 id : SV_DispatchThreadID)
+{
+    uint w, h;
+    Destination.GetDimensions(w, h);
+
+    uint x = HFlip ? w - id.x - 1 : id.x;
+    uint y = VFlip ? h - id.y - 1 : id.y;
+
+    uint v = Source[x + y * w];
+
+    // Unpack and convert to linear
+    float4 color = sRGBToLinear(UnpackRGBA(v));
+
+    // Write the linear color to the destination
+    Destination[id.xy] = color;
+}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d5aa146cb845fa9498d5c811cca0c21f
+timeCreated: 1505749864
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/ContribModules/text/TextExample/TextRecognitionExample.unity
+  uploadId: 817356

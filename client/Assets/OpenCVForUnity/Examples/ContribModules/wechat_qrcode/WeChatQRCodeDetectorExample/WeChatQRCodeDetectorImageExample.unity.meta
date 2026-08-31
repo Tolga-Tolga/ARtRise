@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d38a39bd454596145aa0f1251a4401f8
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/ContribModules/wechat_qrcode/WeChatQRCodeDetectorExample/WeChatQRCodeDetectorImageExample.unity
+  uploadId: 817356

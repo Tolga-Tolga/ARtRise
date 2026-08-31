@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 09025ad6ba9aa664e9a83143f09dd8bd
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/BarcodeDetectorExample/BarcodeDetectorExample.unity
+  uploadId: 817356

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3463718e76ea12d4a8845b409d3c5bdc
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/QRCodeDetectorExample/QRCodeDetectorImageExample.unity
+  uploadId: 817356

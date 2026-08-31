@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 97ca4912decf955489289c9770b65555
+timeCreated: 1555074720
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/features2d/SimpleBlobDetector.cs
+  uploadId: 817356

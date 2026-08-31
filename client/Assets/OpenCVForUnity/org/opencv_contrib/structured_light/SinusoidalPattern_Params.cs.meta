@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 69dfb0de2b37d0b49b45ad740c25339d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv_contrib/structured_light/SinusoidalPattern_Params.cs
+  uploadId: 817356

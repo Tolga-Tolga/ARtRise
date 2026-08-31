@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bd9118cd950f321468a54c2325be8e55
+timeCreated: 1473124419
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/photo/InpaintExample/InpaintExample.unity
+  uploadId: 817356

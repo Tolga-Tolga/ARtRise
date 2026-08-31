@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 5a1c56649093e524789f6393e0ba99c1
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Advanced/MultiObjectTrackingBasedOnColorExample/MultiObjectTrackingBasedOnColorExample.unity
+  uploadId: 817356

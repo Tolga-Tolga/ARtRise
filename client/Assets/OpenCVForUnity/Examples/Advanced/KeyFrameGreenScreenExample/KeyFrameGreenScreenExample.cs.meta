@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2e578f6cf6805cd45ae800a987910310
+timeCreated: 1487346106
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Advanced/KeyFrameGreenScreenExample/KeyFrameGreenScreenExample.cs
+  uploadId: 817356

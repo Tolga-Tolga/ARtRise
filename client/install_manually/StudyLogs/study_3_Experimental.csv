@@ -1,0 +1,7 @@
+﻿session_id;participant_id;timestamp_utc;player_turn;event_type;attacker_id;object_id;time_start_ms;time_end_ms;value;success;notes;looking_at_card
+"3";"unknown";"2026-08-31T12:44:48.4708930Z";"1";"LookedAtObject";"0";"3";0;13.3101339073129;;;;"0"
+"3";"unknown";"2026-08-31T12:44:50.8738230Z";"1";"LookedAtObject";"0";"2";14.7333148596939;14.7333148596939;;;;"3"
+"3";"unknown";"2026-08-31T12:44:52.1033940Z";"1";"LookedAtObject";"0";"3";14.7333148596939;15.5172487670068;;;;"3"
+"3";"unknown";"2026-08-31T12:44:52.5403220Z";"1";"LookedAtObject";"0";"2";15.9461611536281;15.9461611536281;;;;"1"
+"3";"unknown";"2026-08-31T12:44:53.3081030Z";"1";"LookedAtObject";"0";"1";15.9461611536281;16.7194439413265;;;;"1"
+"3";"unknown";"2026-08-31T12:44:53.4088430Z";"1";"LookedAtObject";"0";"2";16.7194439413265;16.8140984339569;;;;"2"

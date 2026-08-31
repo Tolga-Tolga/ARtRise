@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7a13aa9591357b548b7aba2bef8f4770
+timeCreated: 1516806019
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/imgcodecs/ImwriteScreenCaptureExample/ImwriteScreenCaptureExample.unity
+  uploadId: 817356

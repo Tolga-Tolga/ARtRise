@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 99649158883bff04aa2858defdd3b365
+timeCreated: 1532336886
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/features2d/BOWImgDescriptorExtractor.cs
+  uploadId: 817356

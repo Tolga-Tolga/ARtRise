@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 787d945ba07751c4ca1edecbe663dbeb
+ComputeShaderImporter:
+  externalObjects: {}
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/unity/Resources/MatToRenderTexture.compute
+  uploadId: 817356

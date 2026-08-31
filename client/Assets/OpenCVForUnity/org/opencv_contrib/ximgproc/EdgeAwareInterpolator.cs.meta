@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 890934965dbaa9b42b1a4cd3e497ed48
+timeCreated: 1532336885
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv_contrib/ximgproc/EdgeAwareInterpolator.cs
+  uploadId: 817356

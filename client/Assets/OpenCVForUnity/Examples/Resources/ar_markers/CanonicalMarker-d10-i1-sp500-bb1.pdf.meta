@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: efac038e2962d644f80d95257c40e2da
+timeCreated: 1520530307
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Resources/ar_markers/CanonicalMarker-d10-i1-sp500-bb1.pdf
+  uploadId: 817356

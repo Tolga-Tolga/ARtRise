@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ac106eeed759cab429546e34ed26f61b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/imgproc/IntelligentScissorsMB_ValueTuple.cs
+  uploadId: 817356

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3b311bf0902a62d42b72b8d5d9bc3236
+timeCreated: 1520543150
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Resources/ar_markers/CirclesGrid-mx7-my5.pdf
+  uploadId: 817356

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a3512cbeeb707e9449388cd3d8d3d6b9
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Extra.unitypackage
+  uploadId: 817356

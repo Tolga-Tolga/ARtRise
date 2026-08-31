@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 10f08a42c52297d439f4f7d781fd70cc
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/FaceRecognizerSFExample/FaceRecognizerSFExample.unity
+  uploadId: 817356

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 5d79df26aba908d42b971b00c9c9d55b
+timeCreated: 1532336883
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv_contrib/plot/Plot2d.cs
+  uploadId: 817356

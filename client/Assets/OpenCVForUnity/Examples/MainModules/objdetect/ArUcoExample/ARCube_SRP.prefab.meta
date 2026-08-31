@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 18fab7b3295ede84f97c63ff4cbdd9cc
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/ArUcoExample/ARCube_SRP.prefab
+  uploadId: 817356

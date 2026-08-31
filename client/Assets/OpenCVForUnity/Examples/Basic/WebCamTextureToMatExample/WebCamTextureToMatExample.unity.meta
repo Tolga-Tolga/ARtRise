@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 8d8da490363d5454994df36ee27f1ddb
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Basic/WebCamTextureToMatExample/WebCamTextureToMatExample.unity
+  uploadId: 817356

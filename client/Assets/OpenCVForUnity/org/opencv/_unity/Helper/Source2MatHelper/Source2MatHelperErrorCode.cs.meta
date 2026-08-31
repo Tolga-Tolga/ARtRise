@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3a1123d9e1c6b1847bb858404a824dab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/_unity/Helper/Source2MatHelper/Source2MatHelperErrorCode.cs
+  uploadId: 817356

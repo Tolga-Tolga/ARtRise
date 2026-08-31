@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e1a7f25138945445a220192cfea4b4a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/HumanPoseStreamEstimationMediaPipeExample/HandPoseSkeletonMaterial_Left_SRP.mat
+  uploadId: 817356

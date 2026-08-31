@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a4365b3ca8c16b8458c16300ae490274
+timeCreated: 1531413042
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/OpenCVLicense.txt
+  uploadId: 817356

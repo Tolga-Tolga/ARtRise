@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d9f13b0366675c644a2c9ebbac3c65dc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/photo/Photo_ValueTuple.cs
+  uploadId: 817356

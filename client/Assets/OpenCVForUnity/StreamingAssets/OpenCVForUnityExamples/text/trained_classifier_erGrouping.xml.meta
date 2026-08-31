@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d77cad98a4c3bf64b95bb177807f38b9
+timeCreated: 1502746112
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/StreamingAssets/OpenCVForUnityExamples/text/trained_classifier_erGrouping.xml
+  uploadId: 817356

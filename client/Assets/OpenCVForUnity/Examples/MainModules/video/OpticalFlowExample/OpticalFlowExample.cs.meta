@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: dd95ab7525c293643869887f84bb4670
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/video/OpticalFlowExample/OpticalFlowExample.cs
+  uploadId: 817356

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0142bc320bc38a645b69ee864d5653d2
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/features2d/HomographyToFindAKnownObjectExample/HomographyToFindAKnownObjectExample.unity
+  uploadId: 817356

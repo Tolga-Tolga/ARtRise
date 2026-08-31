@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d896c8615a44ab84e96fad97ee449273
+timeCreated: 1532336890
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv_contrib/face/PredictCollector.cs
+  uploadId: 817356

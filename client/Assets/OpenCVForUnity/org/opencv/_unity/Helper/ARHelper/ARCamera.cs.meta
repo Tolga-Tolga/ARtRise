@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5f89a7bb5a6db734e97e235df4cd215d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/_unity/Helper/ARHelper/ARCamera.cs
+  uploadId: 817356

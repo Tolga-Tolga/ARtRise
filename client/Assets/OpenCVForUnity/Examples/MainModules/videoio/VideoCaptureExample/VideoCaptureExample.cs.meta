@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d53fe55b037a6b04a885214de48c22cf
+timeCreated: 1456211528
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/videoio/VideoCaptureExample/VideoCaptureExample.cs
+  uploadId: 817356

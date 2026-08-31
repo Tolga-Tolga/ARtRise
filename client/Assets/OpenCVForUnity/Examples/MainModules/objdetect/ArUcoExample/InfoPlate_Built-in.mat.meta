@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7ade6fd77b2c6da49800a4f1f60ac7fb
+timeCreated: 1472325671
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/ArUcoExample/InfoPlate_Built-in.mat
+  uploadId: 817356

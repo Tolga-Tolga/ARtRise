@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 18e31ddf55a2e6e47ba751a546c1414c
+timeCreated: 1502746112
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/StreamingAssets/OpenCVForUnityExamples/text/trained_classifierNM2.xml
+  uploadId: 817356

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e5b6d89f6b2712943b3fd2994c717048
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/utils/ObjdetectConverters.cs
+  uploadId: 817356

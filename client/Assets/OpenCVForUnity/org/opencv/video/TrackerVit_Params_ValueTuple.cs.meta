@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9b1b2311d514b18489294882f762278b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/video/TrackerVit_Params_ValueTuple.cs
+  uploadId: 817356

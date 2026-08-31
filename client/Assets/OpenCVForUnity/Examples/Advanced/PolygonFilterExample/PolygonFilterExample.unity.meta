@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 25919b317f23af642b03bfbc41105a0f
+timeCreated: 1482242049
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Advanced/PolygonFilterExample/PolygonFilterExample.unity
+  uploadId: 817356

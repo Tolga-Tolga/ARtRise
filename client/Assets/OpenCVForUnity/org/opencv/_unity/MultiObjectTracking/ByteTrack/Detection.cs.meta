@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5510d395331790840b6ed0985d3d5b0a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/_unity/MultiObjectTracking/ByteTrack/Detection.cs
+  uploadId: 817356

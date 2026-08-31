@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b85ca753ae2144c4ba6380fccb81d937
+timeCreated: 1456226062
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/StreamingAssets/OpenCVForUnityExamples/features2d/blobparams.yml
+  uploadId: 817356

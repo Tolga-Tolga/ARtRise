@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 300e2199d312daa40aa83f3109fc2d11
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/unity/Helper/Source2MatHelper/ISource2MatHelper.cs
+  uploadId: 817356

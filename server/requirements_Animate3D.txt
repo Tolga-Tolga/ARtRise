@@ -1,0 +1,72 @@
+--extra-index-url https://download.blender.org/pypi/
+
+# animatediff
+diffusers==0.28.0
+transformers==4.25.1
+xformers==0.0.16
+imageio==2.34.1
+decord==0.6.0
+gdown
+einops
+omegaconf==2.3.0
+safetensors
+gradio==4.11.0
+wandb
+opencv-python
+pillow
+# bitsandbytes 0.38.1 imports the Triton 2.x triton.ops API. Newer Triton
+# releases removed that module and fail while Tracking Anything imports mmcv.
+triton==2.0.0
+accelerate
+tensorboard
+chardet
+
+# threestudio
+pytorch_lightning==2.0.0
+jaxtyping
+typeguard
+git+https://github.com/KAIR-BAIR/nerfacc.git@v0.5.2
+git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+accelerate
+matplotlib
+imageio[ffmpeg]
+git+https://github.com/NVlabs/nvdiffrast.git
+# Animate3D/threestudio uses the legacy Python bindings
+# (read_obj and fast_winding_number_for_meshes).  libigl 2.5.4+ replaced
+# these bindings and is not API-compatible.
+libigl==2.4.1
+xatlas
+trimesh[easy]
+networkx
+pysdf
+PyMCubes
+git+https://github.com/ashawkey/envlight.git
+torchmetrics
+bitsandbytes==0.38.1
+sentencepiece
+# diffusers 0.28.0 still imports cached_download, removed in newer Hub
+# releases.  MediaPipe is used by controlnet_aux' optional face utilities.
+huggingface_hub==0.25.2
+mediapipe==0.10.14
+einops
+kornia
+taming-transformers-rom1504
+git+https://github.com/openai/CLIP.git
+controlnet_aux
+plyfile
+
+# tracking-anything (for foreground segmentation)
+progressbar2
+gitpython
+git+https://github.com/cheind/py-thin-plate-spline
+hickle
+git+https://github.com/facebookresearch/segment-anything.git
+pyyaml
+av
+openmim
+tqdm
+psutil
+
+# animate3d
+git+https://github.com/facebookresearch/pytorch3d.git@v0.7.6
+bpy==4.0.0

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: daa59928a80ac1d4a9edf6830455a76b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/core/MatOfInt4_Ex.cs
+  uploadId: 817356

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cef0e9dabbfe59a4790acbf31c21f33e
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/EnoxSoftware.OpenCVForUnity.asmdef
+  uploadId: 817356

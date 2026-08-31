@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0ce8d69e14dbe2e44af41fa9e8976271
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/core/MatOfKeyPoint_Ex.cs
+  uploadId: 817356

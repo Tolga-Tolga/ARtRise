@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 66a50ce8fde77ce42b6668793e1f21df
+timeCreated: 1532336884
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv_contrib/ximgproc/SelectiveSearchSegmentationStrategy.cs
+  uploadId: 817356

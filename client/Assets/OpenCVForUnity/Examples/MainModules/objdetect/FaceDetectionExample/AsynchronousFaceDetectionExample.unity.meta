@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2e1a0cc040ce66645ae70149a768eae9
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/FaceDetectionExample/AsynchronousFaceDetectionExample.unity
+  uploadId: 817356

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 400d476607e963343875d24410624e5c
+timeCreated: 1506394066
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/StreamingAssets/OpenCVForUnityExamples/text/OCRHMM_transitions_table.xml
+  uploadId: 817356

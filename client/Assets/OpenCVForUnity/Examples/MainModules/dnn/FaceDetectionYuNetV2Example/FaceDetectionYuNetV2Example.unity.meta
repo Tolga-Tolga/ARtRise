@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 606de2379c4c79e4b99a3bb4750a822f
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/FaceDetectionYuNetV2Example/FaceDetectionYuNetV2Example.unity
+  uploadId: 817356

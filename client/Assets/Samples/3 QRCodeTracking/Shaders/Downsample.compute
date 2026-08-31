@@ -1,0 +1,12 @@
+#pragma kernel CSMain
+
+Texture2D<float> _Gray;
+RWTexture2D<uint> _Binary;
+float _Threshold;
+
+[numthreads(8,8,1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    float v = _Gray[id.xy];
+    _Binary[id.xy] = (v > _Threshold) ? 255 : 0;
+}

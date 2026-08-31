@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f18120f83f0c4684aa3cf8c859f18f17
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/core/MatOfFloat4.cs
+  uploadId: 817356

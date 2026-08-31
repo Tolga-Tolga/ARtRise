@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 720f29a99bae0ee46bb8347d9ee5a2d4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/_unity/Helper/Source2MatHelper/Editor/OpenCVForUnityConditionalDisableInInspectorAttribute.cs
+  uploadId: 817356

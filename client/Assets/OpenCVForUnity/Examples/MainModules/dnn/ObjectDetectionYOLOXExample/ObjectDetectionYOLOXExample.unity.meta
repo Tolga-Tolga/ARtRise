@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 03ea3b6163786c34695774b1aaf8f67a
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/ObjectDetectionYOLOXExample/ObjectDetectionYOLOXExample.unity
+  uploadId: 817356

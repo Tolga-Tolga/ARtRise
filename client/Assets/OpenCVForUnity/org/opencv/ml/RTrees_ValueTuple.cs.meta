@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fcc59f0d96a9de74ab580949ba14122d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/ml/RTrees_ValueTuple.cs
+  uploadId: 817356

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cf9e8dd4dd795d14c9386ccd7d78672b
+timeCreated: 1501509920
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/ImageClassificationPPResnetExample/ImageClassificationPPResnetExample.unity
+  uploadId: 817356

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: afe2161b180c8714f9daa3531d276c8f
+timeCreated: 1520530307
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Resources/ar_markers/GridBoard-mx5-my7-d10-os1000-bb1.pdf
+  uploadId: 817356

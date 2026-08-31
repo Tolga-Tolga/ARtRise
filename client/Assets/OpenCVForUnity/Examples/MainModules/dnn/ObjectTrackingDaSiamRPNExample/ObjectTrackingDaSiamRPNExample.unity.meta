@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 01c7358ef72e44f46b1a0b8c669a3b39
+timeCreated: 1601274470
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/ObjectTrackingDaSiamRPNExample/ObjectTrackingDaSiamRPNExample.unity
+  uploadId: 817356

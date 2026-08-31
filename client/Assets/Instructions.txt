@@ -1,0 +1,176 @@
+1. System Overview
+The game is an AR-supported Trading Card Game in which physical cards are recognized via barcode scanning and managed digitally.
+Interactions are performed via voice commands.
+
+
+2. Card Structure
+2.1 Numbering
+Player Cards: 1 to 10
+Enemy Cards: -1 to -10
+
+This number also serves as a unique identifier within the system.
+
+2.2 Card States
+Inactive: Not yet scanned
+Active: Scanned and in play
+Destroyed: HP ≤ 0, no longer active in the game
+
+2.3 Activation
+Cards are recognized via barcode scanning
+After a successful scan:
+The card is added to the game
+State changes to active
+An active card remains in the game until its HP reaches 0
+
+
+3. Input System
+3.1 Voice Command
+Attacks are triggered exclusively via the following command:
+
+"Ich spiele die Karte X"
+
+X corresponds to the card number
+The command must be clearly assignable to an active card
+
+
+4. Game Flow
+4.1 Turn Structure
+The game is turn-based
+Player and enemy perform actions alternately
+Each turn consists of exactly one attack
+
+4.2 Attack Resolution
+The attack is initiated via the voice command
+The selected card performs the action
+An attack always affects all enemy cards simultaneously
+
+
+5. Damage System
+5.1 Card Damage
+Each attacking card deals damage to all enemy cards
+Damage directly reduces the HP of affected cards
+
+5.2 Player Damage
+Player damage depends on the number of active cards:
+
+Number of active cards
+3 or more      Card damage only
+2 or fewer     Card damage + player damage
+
+
+6. Effect System
+6.1 General Rules
+Effects are applied by cards
+A card can only have exactly one effect at a time
+If a new effect is applied:
+The existing effect is completely removed
+
+6.2 Effect Types
+
+Fire
+Deals periodic damage (tick damage)
+Stacking mechanic:
+Stacks increase in steps of 2
+No upper limit on stacks
+
+Frost
+Also deals periodic damage
+Identical behavior to Fire:
+Stacks increase in steps of 2
+Unlimited maximum stacks
+
+Cards can receive additional damage from Fire or Frost if they have a weakness
+
+Poison
+Reduces the damage dealt by the affected card
+Effect is based on a percentage value
+Maximum reduction is limited (defined per card)
+
+
+7. Area Effects
+Each attack acts as an area-of-effect (AoE)
+There is no target selection
+All enemy cards are affected simultaneously
+
+
+8. State Changes
+8.1 Cards
+HP is reduced by damage
+If HP ≤ 0:
+Card is marked as destroyed
+Card no longer participates in the game
+
+8.2 Player
+Player has their own HP
+Player damage is only applied under defined conditions
+
+
+9. Win and Loss Condition
+A player loses when their player HP reaches 0 or below
+Card status has no direct impact on defeat except through the player damage rule
+
+
+Player and Enemy HP = 200
+
+
+Cards with their HP, DMG, Effects, and Weaknesses
+
+1
+HP: 70
+DMG: 30
+Effect: Poison
+Weaknesses: None
+
+2
+HP: 50
+DMG: 50
+Effect: None
+Weaknesses: None
+
+3
+HP: 110
+DMG: 35
+Effect: None
+Weaknesses: None
+
+4
+HP: 100
+DMG: 25
+Effect: Fire
+Weaknesses: Frost
+
+5
+HP: 70
+DMG: 30
+Effect: Frost
+Weaknesses: Fire
+
+6
+HP: 50
+DMG: 15
+Effect: None
+Weaknesses: Frost, Fire
+
+7
+HP: 120
+DMG: 15
+Effect: Poison
+Weaknesses: Poison
+
+8
+HP: 150
+DMG: 20
+Effect: None
+Weaknesses: None
+
+9
+HP: 130
+DMG: 25
+Effect: Poison
+Weaknesses: None
+
+10
+HP: 110
+DMG: 20
+Effect: Poison
+Weaknesses: None

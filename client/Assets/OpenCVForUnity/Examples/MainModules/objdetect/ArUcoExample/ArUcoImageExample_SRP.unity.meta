@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0f57f780acec96342b9912cf2c4c65b7
+timeCreated: 1473872340
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/ArUcoExample/ArUcoImageExample_SRP.unity
+  uploadId: 817356

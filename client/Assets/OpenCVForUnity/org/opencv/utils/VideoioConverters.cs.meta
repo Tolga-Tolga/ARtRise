@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d3f36ab81cb4dfe489fd34c2ca2e7bd5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/utils/VideoioConverters.cs
+  uploadId: 817356

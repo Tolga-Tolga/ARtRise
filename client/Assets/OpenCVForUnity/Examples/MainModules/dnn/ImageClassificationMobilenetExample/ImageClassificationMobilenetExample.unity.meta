@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c47f5ce48c6390346bfc26671a6a2dee
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/ImageClassificationMobilenetExample/ImageClassificationMobilenetExample.unity
+  uploadId: 817356

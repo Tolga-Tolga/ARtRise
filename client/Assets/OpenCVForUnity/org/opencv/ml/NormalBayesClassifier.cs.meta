@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 4f443201bca73204ebc4b2d7b2046300
+timeCreated: 1532336881
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/ml/NormalBayesClassifier.cs
+  uploadId: 817356

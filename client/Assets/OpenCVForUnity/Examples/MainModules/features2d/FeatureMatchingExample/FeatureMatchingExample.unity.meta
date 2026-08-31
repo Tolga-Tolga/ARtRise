@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 78788c6c4c1d3ec42a68ded2b1b9a894
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/features2d/FeatureMatchingExample/FeatureMatchingExample.unity
+  uploadId: 817356

@@ -1,0 +1,28 @@
+#pragma kernel CSMain
+
+Texture2D<float4> _Input;
+SamplerState sampler_PointClamp;
+RWTexture2D<float> _Output;
+
+int _OutputWidth;
+int _OutputHeight;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= _OutputWidth || id.y >= _OutputHeight)
+        return;
+
+    float2 uv = float2(
+        (id.x + 0.5) / _OutputWidth,
+        (id.y + 0.5) / _OutputHeight
+    );
+
+    float4 col = _Input.SampleLevel(sampler_PointClamp, uv, 0);
+
+    // TRUE GRAYSCALE — no enhancements
+    float gray = dot(col.rgb, float3(0.299, 0.587, 0.114));
+
+    _Output[int2(id.x, id.y)] = gray;
+}
+

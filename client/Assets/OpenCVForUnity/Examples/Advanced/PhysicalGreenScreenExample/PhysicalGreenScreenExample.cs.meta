@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8b4dfd61e58fb364e95268089df0a72c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Advanced/PhysicalGreenScreenExample/PhysicalGreenScreenExample.cs
+  uploadId: 817356

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0d99bc8e46af63640943285d7e9afdcc
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/imgproc/WrapPerspectiveExample/WrapPerspectiveExample.unity
+  uploadId: 817356

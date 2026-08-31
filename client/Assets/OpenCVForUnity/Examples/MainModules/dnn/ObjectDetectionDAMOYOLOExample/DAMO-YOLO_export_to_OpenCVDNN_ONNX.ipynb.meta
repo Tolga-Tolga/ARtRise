@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1515a048b1afb3040a8aa5987502c278
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/ObjectDetectionDAMOYOLOExample/DAMO-YOLO_export_to_OpenCVDNN_ONNX.ipynb
+  uploadId: 817356

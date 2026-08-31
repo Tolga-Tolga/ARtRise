@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 523ca194a309eda4f97a271472c25b24
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/unity/Worker/DataStruct/FaceDetection5LandmarkData.cs
+  uploadId: 817356

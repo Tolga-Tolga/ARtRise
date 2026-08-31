@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5df3eb4817b21084b8554947df82cd35
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/imgproc/GeneralizedHough_Struct.cs
+  uploadId: 817356

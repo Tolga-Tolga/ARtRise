@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1d6a6bf648d936f49ba3ed1907617bba
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/video/TrackerDaSiamRPN_Params.cs
+  uploadId: 817356

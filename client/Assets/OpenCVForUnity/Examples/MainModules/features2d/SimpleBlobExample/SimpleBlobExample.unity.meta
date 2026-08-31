@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 92c7f15c9b5ba4b41b03052cf282a50f
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/features2d/SimpleBlobExample/SimpleBlobExample.unity
+  uploadId: 817356

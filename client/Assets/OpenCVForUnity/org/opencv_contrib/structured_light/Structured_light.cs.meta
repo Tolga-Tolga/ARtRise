@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 56db0c967a328184bbf8f88df23294ca
+timeCreated: 1595177813
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv_contrib/structured_light/Structured_light.cs
+  uploadId: 817356

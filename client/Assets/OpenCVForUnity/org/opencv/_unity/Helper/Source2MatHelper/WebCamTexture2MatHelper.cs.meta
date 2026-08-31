@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: dac5e86210f0d6a449c7bee960bf6cee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/_unity/Helper/Source2MatHelper/WebCamTexture2MatHelper.cs
+  uploadId: 817356

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 230462e67eb0ca948a62db8f6d2954a4
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/unity/DebugMat/Resources/OpenCVDebugMatCanvas.prefab
+  uploadId: 817356

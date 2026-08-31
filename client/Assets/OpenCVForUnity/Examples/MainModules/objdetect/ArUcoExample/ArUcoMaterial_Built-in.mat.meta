@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a80ca277c92aa7a45bcb5c652f75f862
+timeCreated: 1472325671
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/ArUcoExample/ArUcoMaterial_Built-in.mat
+  uploadId: 817356

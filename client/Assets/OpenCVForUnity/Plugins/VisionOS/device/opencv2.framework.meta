@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 4cd787b32c2d24c57b89f39245741e30
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 3
+  iconMap: {}
+  executionOrder: {}
+  defineConstraints: []
+  isPreloaded: 1
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
+  platformData:
+    Any:
+      enabled: 0
+      settings: {}
+    Editor:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+    VisionOS:
+      enabled: 1
+      settings:
+        AddToEmbeddedBinaries: true
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

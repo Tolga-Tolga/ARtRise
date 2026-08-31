@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8bf220564997d12458f50b4daf8186af
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/unity/Helper/ARHelper/Editor/LabeledVector2Drawer.cs
+  uploadId: 817356

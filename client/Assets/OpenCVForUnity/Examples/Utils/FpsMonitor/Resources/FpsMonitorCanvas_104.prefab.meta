@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a45bdaf2644ffef4484b59ebc672a621
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Utils/FpsMonitor/Resources/FpsMonitorCanvas_104.prefab
+  uploadId: 817356

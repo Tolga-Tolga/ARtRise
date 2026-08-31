@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7a8897045abc2a449b1a5b34ed58315a
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Advanced/ComicFilterExample/ComicFilterExample.unity
+  uploadId: 817356

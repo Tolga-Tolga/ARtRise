@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bbb12ad96ac24bc42a4ef55730d2adb8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/dnn/Image2BlobParams_ValueTuple.cs
+  uploadId: 817356

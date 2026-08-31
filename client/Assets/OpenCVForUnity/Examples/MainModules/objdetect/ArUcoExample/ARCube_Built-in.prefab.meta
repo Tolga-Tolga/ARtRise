@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9199fa2fcf5215645affde5c29f3db94
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/ArUcoExample/ARCube_Built-in.prefab
+  uploadId: 817356

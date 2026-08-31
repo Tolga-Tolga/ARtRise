@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1dd669789a228ea47a04c09af0a3fdf2
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/ObjectDetectionDAMOYOLOExample/README.md
+  uploadId: 817356

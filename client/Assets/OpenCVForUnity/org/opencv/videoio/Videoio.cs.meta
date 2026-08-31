@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b65988f470fd68d489e0caf4fad516ae
+timeCreated: 1532336888
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/videoio/Videoio.cs
+  uploadId: 817356

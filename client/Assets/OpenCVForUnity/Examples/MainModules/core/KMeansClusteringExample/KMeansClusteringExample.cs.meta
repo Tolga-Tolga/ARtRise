@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0668099b35b70794caedb1e2d0cdb997
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/core/KMeansClusteringExample/KMeansClusteringExample.cs
+  uploadId: 817356

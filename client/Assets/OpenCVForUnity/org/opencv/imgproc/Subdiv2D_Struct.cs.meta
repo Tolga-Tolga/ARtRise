@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a3d7200d7965786459a4b2f6ea88e06d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/imgproc/Subdiv2D_Struct.cs
+  uploadId: 817356

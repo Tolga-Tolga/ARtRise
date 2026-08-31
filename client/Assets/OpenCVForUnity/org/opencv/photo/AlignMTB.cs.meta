@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 000bc933c855c6b4da51ba8378a482d5
+timeCreated: 1532336876
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/photo/AlignMTB.cs
+  uploadId: 817356

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ae07d58b5e5290c4a8ead6ed6e105dcd
+timeCreated: 1572018742
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/link.xml
+  uploadId: 817356

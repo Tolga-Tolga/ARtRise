@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 94571a6b79d0cf14ba69f68be8bb2852
+timeCreated: 1438870515
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Editor/OpenCVForUnityMenuItem.cs
+  uploadId: 817356

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 29f10a0fbceb32941b9167a01fc9cc82
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/ml/KNNExample/KNNExample.unity
+  uploadId: 817356

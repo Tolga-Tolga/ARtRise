@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2ab13a44371e5df4886f6f34a918746c
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/ContribModules/bgsegm/BackgroundSubtractorExample/BackgroundSubtractorExample.cs
+  uploadId: 817356

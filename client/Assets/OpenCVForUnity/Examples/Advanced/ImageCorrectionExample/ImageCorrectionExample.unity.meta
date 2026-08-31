@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 96b668959399ee845b38f66a5cd47c57
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/Advanced/ImageCorrectionExample/ImageCorrectionExample.unity
+  uploadId: 817356

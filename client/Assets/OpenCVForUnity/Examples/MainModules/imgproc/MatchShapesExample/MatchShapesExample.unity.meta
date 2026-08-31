@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4225fd0f43c1783479d8605bc554b142
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/imgproc/MatchShapesExample/MatchShapesExample.unity
+  uploadId: 817356

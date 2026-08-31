@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 68bab14186abece419a40c6fdc0270b0
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/StreamingAssets/OpenCVForUnityExamples/objdetect/haarcascade_eye_tree_eyeglasses.xml
+  uploadId: 817356

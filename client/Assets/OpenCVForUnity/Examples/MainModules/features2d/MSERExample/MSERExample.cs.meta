@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 32950d73fd2794c4c88605f996831ac2
+timeCreated: 1473524171
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/features2d/MSERExample/MSERExample.cs
+  uploadId: 817356

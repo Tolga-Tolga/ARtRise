@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e823dc143d7524a4fadd007ac23a4d58
+timeCreated: 1454599926
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/videoio/VideoWriterAsyncExample/VideoWriterAsyncExample.unity
+  uploadId: 817356

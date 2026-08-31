@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c3266f39a2c98043a4d834216b4caa0
+timeCreated: 1518958281
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/video/KalmanFilterExample/KalmanFilterExample.unity
+  uploadId: 817356

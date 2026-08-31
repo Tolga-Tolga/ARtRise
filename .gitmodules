@@ -1,0 +1,12 @@
+[submodule "server/components/TRELLIS"]
+	path = server/components/TRELLIS
+	url = https://github.com/microsoft/TRELLIS.git
+[submodule "server/components/Real-ESRGAN"]
+	path = server/components/Real-ESRGAN
+	url = https://github.com/xinntao/Real-ESRGAN.git
+[submodule "server/components/Animate3D"]
+	path = server/components/Animate3D
+	url = https://github.com/yanqinJiang/Animate3D.git
+[submodule "server/components/rembg"]
+	path = server/components/rembg
+	url = https://github.com/danielgatis/rembg.git

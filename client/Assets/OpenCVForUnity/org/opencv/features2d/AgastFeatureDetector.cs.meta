@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b565ef35d627acd4d8ca438fcd3e7111
+timeCreated: 1532336888
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/features2d/AgastFeatureDetector.cs
+  uploadId: 817356

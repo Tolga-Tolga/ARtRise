@@ -55,10 +55,8 @@ In Live Mode, the complete interaction is intended to work as follows:
    client to place an initial model on the card.
 7. In parallel, the server converts the mesh into the representation expected
    by Animate3D and generates a motion sequence.
-8. In the documented research flow, the server converts the animated FBX back
-   to GLB and the client replaces the static model with that animated GLB. The
-   current checkout stops at FBX instead, so this final hand-off requires either
-   client-side FBX support or restoration of the server-side conversion.
+8. The server converts the animated FBX into a self-contained GLTF document and
+   the client replaces the static model with that animated GLTF.
 
 This two-step delivery is central to ARtRise: model generation is relatively
 fast compared with animation generation, so the player receives visual feedback
@@ -80,7 +78,7 @@ flowchart TB
     Convert["5 · Blender<br/>GLB → OBJ + PBR maps"]
     Static["Static GLB"]
     Animate["6 · Animate3D"]
-    Animated["Animated FBX"]
+    Animated["Animated GLTF"]
     Delivery["Spring Boot API<br/>progressive asset delivery"]
     Present["Meta Quest 3 · Unity<br/>card tracking and AR presentation"]
 
@@ -141,11 +139,9 @@ flowchart TB
 ```
 
 In the experimental path, the client collects six normalized artwork captures
-for a newly seen QR code and uploads all six as separate PNG files named from
-the card ID. The QR code is then marked as uploaded so later detections update
-tracking and game state without collecting another batch. Because the server
-assigns a new UUID to every uploaded file, this currently creates six
-independent generation jobs rather than one multi-view job.
+for a newly seen QR code but uploads only the first capture. It uses the final
+QR path segment as the filename, for example `1.png`. The server preserves this
+safe filename, so the same identifier is used for `1.glb` and `1.gltf`.
 
 ### AR and game feedback
 
@@ -157,9 +153,10 @@ is rendered above its corresponding physical card.
 
 GLB assets are loaded at runtime with glTFast. In the study scenes, a preloader
 copies bundled models from `StreamingAssets/gameobjects` into the application's
-persistent storage before they are instantiated. The experimental downloader
-can retry static GLB downloads, but it does not currently request the server's
-animated asset or replace an already loaded static model.
+persistent storage before they are instantiated. In Experimental Mode, the
+client retries `<id>.glb` and the legacy `<id>_out.glb` until a static model is
+available. It then polls `/files/animated/<id>.gltf` and replaces the static
+model while preserving the tracked card pose.
 
 The complete research experience also supports:
 
@@ -181,9 +178,9 @@ and should not be treated as this checkout's dependency locks.
 
 ### Live Mode and Study Mode
 
-- **Live Mode** captures artwork and requests newly generated assets during the
-  session. The code calls this `experimentalMode`; it is serialized as disabled
-  in the checked-in scenes and its current server hand-off is incomplete.
+- **Live Mode** is exposed as `Experimental` in the mode-selection scene. It
+  captures artwork, uploads one image per card ID, and progressively replaces
+  the placeholder with the static and then animated server model.
 - **Study Mode** uses animated assets that were generated in advance and stored
   locally on the headset. Scenes `A`, `B`, and `C` encode the study conditions
   with models and UI, models only, and UI only, respectively. This mode was
@@ -200,13 +197,13 @@ technical contribution is composing them into a single progressive pipeline.
 
 | Stage | Implementation | Input → output | Relevant behavior |
 |---|---|---|---|
-| Upload | Spring Boot | multipart image → `UUID.<ext>` | Accepts PNG, JPG/JPEG, BMP, and WEBP. The completed upload is atomically moved into the pipeline so workers never read a partial file. |
+| Upload | Spring Boot | multipart image → original client filename | Accepts PNG, JPG/JPEG, BMP, and WEBP. The safe basename is preserved and the completed upload is atomically moved into the pipeline so workers never read a partial file. |
 | 1. Vertical correction | Pillow | original image → flipped image | Flips top-to-bottom to correct the row orientation of the Quest camera texture buffer, then removes the source file. |
 | 2. Super-resolution | Real-ESRGAN | flipped image → 4× image | The checked-in wrapper defaults to `RealESRGAN_x4plus`, scale `4`, tile size `0`, and half precision unless `--fp32` is supplied. |
 | 3. Background removal | rembg | upscaled image → transparent PNG | Intended to isolate the foreground character using the rembg CLI and its U²-Net-based default model. |
 | 4. 3D reconstruction | TRELLIS | foreground PNG → textured GLB | Loads a local `TRELLIS-image-large`, uses seed `1`, removes approximately 95% of triangles during simplification, and uses a 1024-pixel texture. The model remains resident in a long-running worker. |
 | 5. Animation preparation | headless Blender | GLB → triangulated OBJ + PBR maps | Extracts or creates diffuse, metallic, roughness, normal, and PBR textures. It also copies the GLB into `static_models`, making the early result downloadable. |
-| 6. Mesh animation | Animate3D | OBJ package → animated FBX | Converts the mesh to Gaussians, renders four views, generates a 16-frame motion, segments the frames, optimizes a trajectory, and transfers it back to the mesh. The included script creates a generic idle animation. |
+| 6. Mesh animation | Animate3D + Blender | OBJ package → FBX → embedded GLTF | Converts the mesh to Gaussians, renders four views, generates a 16-frame motion, exports FBX, and converts it to a self-contained GLTF. The included script creates a generic idle animation. |
 
 The research configuration used `RealESRGAN_x4plus_anime_6B` in FP16 because
 the cards contained anime-style artwork. The current wrapper instead defaults
@@ -236,19 +233,25 @@ server/pipeline/
 │   └── model_generation/
 │       └── generated_glb/                  # TRELLIS hand-off
 └── output/
-    ├── static_models/<uuid>.glb             # early client result
-    ├── animated_models/<uuid>/
-    │   └── animate3d_model.fbx              # final current-checkout result
-    └── archive/
-        ├── static_models/                   # downloaded GLBs
-        └── animated_models/                 # downloaded FBXs
+    ├── static_models/<client_stem>.glb      # early client result
+    ├── animated_models/<client_stem>/
+    │   ├── animate3d_model.fbx              # Animate3D intermediate
+    │   └── animate3d_model.gltf             # final client result
+```
+
+The Spring Boot transport directories are kept separate from the pipeline:
+
+```text
+server/webserver/
+├── uploads/                                 # completed uploads before hand-off
+└── downloads/                               # one-shot delivery staging
 ```
 
 For animation, Blender additionally creates this package inside the Animate3D
 component:
 
 ```text
-components/Animate3D/data/animate3d/mesh/obj_file/<uuid>/
+components/Animate3D/data/animate3d/mesh/obj_file/<client_stem>/
 ├── base.obj
 ├── base.mtl
 ├── texture_diffuse.png
@@ -258,26 +261,22 @@ components/Animate3D/data/animate3d/mesh/obj_file/<uuid>/
 └── texture_roughness.png
 ```
 
-The image-stage workers remove inputs after successful processing. Blender is
-an exception: it archives and removes every discovered GLB even if OBJ
-conversion failed. When the service handles a valid download request, it reads
-the asset into memory and moves the file into `archive/` before the controller
-returns the response bytes. The live download is therefore effectively
-one-shot even if the later HTTP transfer fails.
+The image-stage workers remove inputs after successful processing. Blender
+publishes a static GLB and removes every discovered input GLB, including when
+OBJ conversion fails. The webserver completes uploads in `webserver/uploads`,
+publishes them atomically into the pipeline input directory, and removes the
+staging file immediately. For downloads it copies the completed asset into
+`webserver/downloads`, reads it, and removes both the staging copy and pipeline
+source, so delivery is intentionally one-shot.
 
 ## Progressive asset delivery
 
-The server exposes two progressive outputs. Every upload receives
-a new server-generated UUID. `ModelPipelineCustom` logs the plain-text upload
-response without retaining that UUID, while the download code expects numbered
-card files such as `1.glb` and `-1.glb`.
-
-A compatible client must parse the UUID asset stem from each upload response
-and poll two names: `<uuid>.glb` for the early static model, then bare `<uuid>`
-for the animation. The API does not push completion events or return a durable
-job record. The following sequence therefore documents the current **server
-contract and intended client behavior**, not a working end-to-end flow in this
-revision:
+The server exposes two progressive outputs. Every upload preserves the safe
+basename supplied by the client. A filename such as `-10.png` therefore stays
+`-10.png` in the pipeline and produces `-10.glb` and `-10.gltf` for progressive
+delivery. The client can use the upload response directly. If a filename is
+already being processed, the server rejects the duplicate rather than
+overwriting the active job.
 
 ```mermaid
 sequenceDiagram
@@ -286,46 +285,49 @@ sequenceDiagram
     participant P as Pipeline
 
     Q->>API: Upload artwork
-    API->>P: Queue uuid.png
-    API-->>Q: Uploaded: uuid.png
+    API->>P: Queue -10.png
+    API-->>Q: Uploaded: -10.png
     P->>P: Prepare image and reconstruct 3D model
-    P->>P: Publish static uuid.glb
+    P->>P: Publish static -10.glb
 
     par Early result
-        Q->>API: Poll uuid.glb
+        Q->>API: Poll -10.glb
         API->>P: Check static output
         P-->>API: Available
         API-->>Q: true
-        Q->>API: Download uuid.glb
-        API->>P: Archive static GLB
+        Q->>API: Download -10.glb
+        API->>P: Stage GLB in webserver/downloads
         API-->>Q: Static GLB
     and Animation continues
-        P->>P: Generate and publish animated FBX
+        P->>P: Generate FBX and publish embedded animated GLTF
     end
 
-    Q->>API: Poll uuid
+    Q->>API: Poll /files/animated/-10.gltf
     API->>P: Check animated output
     P-->>API: Available
     API-->>Q: true
-    Q->>API: Download uuid
-    API->>P: Archive animated FBX
-    API-->>Q: Animated FBX
+    Q->>API: GET /files/animated/-10.gltf
+    API->>P: Stage GLTF in webserver/downloads
+    API-->>Q: Animated GLTF
 ```
 
-The thesis places an additional FBX-to-GLB conversion on the server, moves the
-animated GLB into the server download directory, and then lets the client
-retrieve it.
+The checked-in pipeline follows the same idea with an FBX-to-embedded-GLTF
+conversion: the animation worker publishes a single `.gltf` document, and the
+webserver stages it in `webserver/downloads` before one-shot delivery.
 
 ## REST API
 
-The web interface binds to `0.0.0.0:8080` by default and exposes three
-unauthenticated endpoints under `/files`.
+The web interface binds to `0.0.0.0:8080` by default and exposes four
+unauthenticated endpoints under `/files`. The Quest dialog defaults to port
+`18082`; either start Spring Boot with `SERVER_PORT=18082` or enter `8080` in
+the client.
 
 | Method | Endpoint | Purpose | Response |
 |---|---|---|---|
-| `POST` | `/files/upload` | Upload extracted artwork as multipart field `file` | Plain text: `Uploaded: <uuid>.<ext>` |
-| `GET` | `/files/exists/{name}` | Poll `<uuid>.glb` for the static asset or bare `<uuid>` for animation | Boolean `true` or `false` |
-| `GET` | `/files/download/{name}` | Download `<uuid>.glb`, or bare `<uuid>` which resolves to `<uuid>/animate3d_model.fbx` | GLB as `model/gltf-binary`; animation as `application/octet-stream` |
+| `POST` | `/files/upload` | Upload extracted artwork as multipart field `file` | Plain text: `Uploaded: <client_filename>` |
+| `GET` | `/files/exists/{name}` | Poll `<client_stem>.glb` for the static asset (legacy bare `<client_stem>` also checks FBX) | Boolean `true` or `false` |
+| `GET` | `/files/download/{name}` | Download `<client_stem>.glb`; bare `<client_stem>` remains a legacy FBX route | GLB as `model/gltf-binary`; FBX as `application/octet-stream` |
+| `GET` | `/files/animated/{client_stem}.gltf` | Poll and download the completed self-contained animated GLTF | `model/gltf+json`; 404 until ready, then one-shot delivery |
 
 Multipart files and multipart requests are each capped at 200 MB.
 `exists=false` means only that the asset is not in the public output directory;
@@ -335,11 +337,11 @@ unknown jobs.
 ### Example request flow
 
 ```bash
-# 1. Upload normalized artwork. Keep the UUID returned in the plain-text body.
+# 1. Upload normalized artwork. The server preserves the client filename.
 curl --fail -F "file=@artwork.png" http://SERVER:8080/files/upload
-# Uploaded: 7b3b29a0-0000-0000-0000-123456789abc.png
+# Uploaded: artwork.png
 
-ASSET_ID="7b3b29a0-0000-0000-0000-123456789abc"
+ASSET_ID="artwork"
 
 # 2. Poll and download the early static asset.
 curl --fail "http://SERVER:8080/files/exists/${ASSET_ID}.glb"
@@ -347,9 +349,9 @@ curl --fail -o "${ASSET_ID}.glb" \
   "http://SERVER:8080/files/download/${ASSET_ID}.glb"
 
 # 3. Poll and download the final animated asset.
-curl --fail "http://SERVER:8080/files/exists/${ASSET_ID}"
-curl --fail -o animate3d_model.fbx \
-  "http://SERVER:8080/files/download/${ASSET_ID}"
+curl --fail --retry 20 --retry-delay 2 \
+  -o "${ASSET_ID}.gltf" \
+  "http://SERVER:8080/files/animated/${ASSET_ID}.gltf"
 ```
 
 The API currently reads each download fully into memory before responding. It
@@ -413,7 +415,7 @@ to the REST API. To rebuild and deploy it, use:
   wit.ai configuration supplied by the developer.
 
 The checked-in Player Settings target Android API level 32, ARM64 with IL2CPP,
-and the package identifier `com.ulmuniversity.artrise`. The Android manifest
+and the release package identifier `com.UlmUniversity.ARtRise`. The Android manifest
 declares headset-camera, hand-tracking, scene, anchor, and boundary permissions,
 as well as the passthrough feature. The project contains the required settings and a Quest build.
 
@@ -490,20 +492,16 @@ model behavior, and CUDA compatibility.
 Open `client/` as a project in Unity Hub with Unity `6000.0.39f1` and let the
 Package Manager restore the locked dependencies. Verify that ZXing.Net and the
 licensed OpenCV for Unity Android plugin are available before compiling. The
-build list contains the mode-selection/UI scene, the QR tracking scene, the
-three study conditions (`A`, `B`, and `C`), and the `Experimental` scene.
+build list contains `ModeSelection`, the three study conditions (`A`, `B`, and
+`C`), and the `Experimental` scene.
 
 Before attempting Live Mode:
 
-1. replace the development address currently embedded in
-   `ModelPipelineCustom.cs` and serialized in the experimental downloader with
-   an address reachable from the headset;
-2. account for the server's default port `8080` or deliberately forward the
-   research-client port `18082`;
-3. implement the UUID-to-card association and animated-result hand-off
-   described under [Progressive asset delivery](#progressive-asset-delivery);
-4. enable `experimentalMode` in the intended scene; and
-5. provide a valid wit.ai configuration locally if voice commands are needed.
+1. select `Experimental` and enter a server address reachable from the headset;
+2. account for the server's default port `8080` or start it on the client's
+   default port `18082`;
+3. copy the documented `client/install_manually` contents to the headset; and
+4. provide a valid wit.ai configuration locally if voice commands are needed.
 
 Never commit voice-service tokens or other credentials. Once the client
 integration steps above are completed, build for Android/ARM64, deploy to the
@@ -511,19 +509,17 @@ Quest, and grant the requested headset camera and passthrough permissions.
 
 ### 3. Prepare component-specific environments
 
-Install TRELLIS, Real-ESRGAN, rembg, and Animate3D independently, following the
-pinned upstream instructions and the notes in
-[`server/README.md`](server/README.md). Then place the required model weights
-and Blender executable at the paths described above.
+Run the repository installer from Linux or WSL2. It creates the isolated Conda
+environments, downloads the required weights, and builds the webserver:
 
-Install rembg with its CLI extra—for example, `pip install ".[cpu,cli]"` from
-the pinned component directory, or the equivalent GPU extra. The CLI command
-used by the adapter is not installed by the backend-only extra documented in
-the current server notes.
+```bash
+cd server
+chmod +x install.sh
+./install.sh
+```
 
-Also note that TRELLIS's upstream `setup.sh --new-env` creates an environment
-named `trellis`, while the ARtRise supervisor expects `art-rise-trellis`. Create
-the expected environment or set `ARTRISE_TRELLIS_ENV=trellis` deliberately.
+Blender remains a separate installation and must be configured through
+`BLENDER_EXECUTABLE`. See [`server/README.md`](server/README.md) for details.
 
 ### 4. Start the REST interface
 
@@ -540,18 +536,14 @@ paths are relative to that directory.
 
 ### 5. Start the generation pipeline
 
-The intended supervisor entry point is:
+The supervisor entry point is:
 
 ```bash
-# From the repository root, after addressing the current integration issues.
 python server/scripts/run.py
 ```
 
-It is designed to start the polling watcher and a persistent TRELLIS worker;
-the Spring Boot process remains separate. In the current checkout, the
-supervisor and several automatic hand-offs still require integration fixes, so
-this command should be understood as the designed entry point rather than a
-verified one-command launch.
+It starts the polling watcher and a persistent TRELLIS worker; the Spring Boot
+process remains separate.
 
 ### Configuration
 
@@ -565,17 +557,16 @@ verified one-command launch.
 | `ARTRISE_ANIMATE3D_ENV` | `art-rise-animate3d` |
 | `ANIMATE3D_SCRIPT` | animation worker, defaults to `server/scripts/workers/Animate_3D/idle.sh` from the repository root |
 | `BLENDER_EXECUTABLE` | Blender binary, defaults to `server/components/Blender/blender` |
-| `PIPELINE_INPUT_DIR` | API upload directory |
-| `PIPELINE_OUTPUT_DIR` | animated-model public directory |
-| `PIPELINE_GLB_DIR` | static-model public directory |
-| `PIPELINE_ARCHIVE_DIR` | downloaded-asset archive |
+| `WEB_UPLOAD_DIR` | webserver upload staging directory (default `server/webserver/uploads`) |
+| `WEB_DOWNLOAD_DIR` | webserver download staging directory (default `server/webserver/downloads`) |
+| `PIPELINE_INPUT_DIR` | pipeline input directory |
+| `PIPELINE_OUTPUT_DIR` / `PIPELINE_ANIMATED_DIR` | animated-model output directory |
+| `PIPELINE_GLB_DIR` | static-model output directory |
 | `U2NET_HOME` | optional persistent rembg model cache |
 
-The four `PIPELINE_*` variables configure Spring Boot only. The Python workers
-use fixed locations under `server/pipeline`; changing the API variables does
-not relocate worker storage. Any overrides must therefore resolve to those same
-directories—or the worker code must also be changed—and both sides must access
-the same underlying filesystem.
+The Spring Boot paths and Python worker paths must refer to the same underlying
+filesystem. The webserver moves uploads into the fixed pipeline input stage and
+reads published outputs from the configured animated/static output stages.
 
 ## Performance
 
@@ -675,4 +666,3 @@ third-party components included with or used by ARtRise.
 ## Citation
 
 If you use ARtRise in academic work, cite the underlying thesis:
-

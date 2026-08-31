@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1768e00ce78cde348a9e5d4bbaf1daf9
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/dnn/ObjectDetectionYOLOXExample/YOLOX_export_to_OpenCVDNN_ONNX_gihub.ipynb
+  uploadId: 817356

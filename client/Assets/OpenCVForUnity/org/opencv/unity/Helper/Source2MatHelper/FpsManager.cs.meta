@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5bded1be73bc11848bf9ca79e082cd75
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv/unity/Helper/Source2MatHelper/FpsManager.cs
+  uploadId: 817356

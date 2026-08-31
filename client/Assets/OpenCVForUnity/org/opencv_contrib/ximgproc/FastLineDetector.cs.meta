@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 423a682d4b67571429361b93cce059c7
+timeCreated: 1532336880
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/org/opencv_contrib/ximgproc/FastLineDetector.cs
+  uploadId: 817356

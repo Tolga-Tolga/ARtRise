@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 24c79083d77ae544b96eee61e8577b38
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/Examples/MainModules/objdetect/FaceIdentificationEstimatorExample/FaceIdentificationEstimatorExample.unity
+  uploadId: 817356

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6e8b76c018c26c84eb1addcef4453344
+timeCreated: 1456226062
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.1
+  assetPath: Assets/OpenCVForUnity/StreamingAssets/OpenCVForUnityExamples/768x576_mjpeg.mjpeg
+  uploadId: 817356
